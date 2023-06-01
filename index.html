@@ -1,0 +1,500 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poppy Finance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <!-- <link href="css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css?v=15" />
+
+    <style>
+      .scrollFade {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .scrollFade--hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .scrollFade--visible {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .scrollFade--animate {
+        transition: opacity 0.4s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap navbar">
+        <div class="logo-wrap">
+          <img class="logo" src="img/logo.png" alt="" />
+          <h1 class="logo-title">PoppyFinance</h1>
+        </div>
+
+        <div class="menu">
+          <!-- <div class="balance">
+            <img src="img/bif.png" alt="" />
+            <span>$428.69</span>
+          </div> -->
+          <!-- <button class="yellow-btn">Launch App</button> -->
+        </div>
+      </div>
+    </header>
+    <section class="scrollFade">
+      <div class="wrap preview">
+        <img
+          class="preview-img preview-bottom-left"
+          src="img/preview-bottom-left.png"
+          alt=""
+        />
+        <img
+          class="preview-img preview-bottom-right"
+          src="img/preview-bottom-right.png"
+          alt=""
+        />
+        <img
+          class="preview-img preview-top-left"
+          src="img/preview-top-left.png"
+          alt=""
+        />
+        <img
+          class="preview-img preview-top-right"
+          src="img/preview-top-right.png"
+          alt=""
+        />
+        <div class="preview-content">
+          <h2 id="preview-title" class="preview-title">
+            Yield Optimizer on <span class="yellow">Cardano</span>
+          </h2>
+          <p id="preview-subtitle" class="preview-subtitle">
+            Earn the highest APYs across Cardano safetly and efficiently.
+          </p>
+          <div class="preview-actions">
+            <a href="https://twitter.com/Poppy_Finance">
+            <button id="news-btn" class="yellow-btn news-btn">
+              Recent News
+            </button>
+            </a>
+            <!-- <button id="docs-btn" class="dark-btn docs-btn">View Docs</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scrollFade">
+      <div class="wrap earn">
+        <h3 class="page-title">Earn with Poppy</h3>
+        <div class="earn-navigation">
+          <!-- <div class="earn-navigation-item nav-active" data-id="1">
+            Single Asset
+          </div> -->
+          <div class="earn-navigation-item" data-id="1">Liquidity Pools</div>
+          <div class="earn-navigation-item" data-id="2">Earning Pools</div>
+          <div class="earn-navigation-item" data-id="3">ZAP</div>
+        </div>
+
+        <!-- <div class="earn-list active-earn-list" data-id="1">
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Stake</h4>
+            <p class="earn-text">
+              Invest your token in a Poppy single asset Vault.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Earn</h4>
+            <p class="earn-text">
+              Poppy stakes the token on an external, interest-bearing platform.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Reinvest</h4>
+            <p class="earn-text">
+              Your interest is used to purchase more of the asset and
+              reinvested.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Autocompound</h4>
+            <p class="earn-text">
+              Poppy regularly and automatically repeats the process, saving you
+              time and fees.
+            </p>
+          </div>
+        </div> -->
+
+        <div class="earn-list active-earn-list" data-id="1">
+          <div class="earn-item card-blue">
+            <!-- <span class="earn-number">1</span> -->
+            <h4 class="earn-item-title text-yellow">Deposit</h4>
+            <p class="earn-text">
+              Stake LP tokens from external DEXs in a Poppy Vault.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Earn Rewards</h4>
+            <p class="earn-text">
+              Poppy stakes the token on an external, interest-bearing platform.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Reinvest</h4>
+            <p class="earn-text">
+              Your interest is used to purchase
+              more of the token pair and
+              reinvested.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Autocompound</h4>
+            <p class="earn-text">
+              Poppy regularly and automatically
+              repeats the process, saving you
+              time and fees.
+            </p>
+          </div>
+        </div>
+
+        <div class="earn-list" data-id="2">
+          <div class="earn-item card-blue">
+            <!-- <span class="earn-number">1</span> -->
+            <h4 class="earn-item-title text-yellow">Stake</h4>
+            <p class="earn-text">
+              Invest your Poppy in an Earnings Pool for a specific asset.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Earn</h4>
+            <p class="earn-text">
+              A share of the platform’s revenue is used to purchase the token.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Reinvest</h4>
+            <p class="earn-text">
+              Your interest is used to purchase
+more of the asset and
+reinvested.
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Reward</h4>
+            <p class="earn-text">
+              The purchased asset is your reward. 
+            </p>
+          </div>
+        </div>
+
+        <div class="earn-list" data-id="3">
+          <div class="earn-item card-blue">
+            <!-- <span class="earn-number">1</span> -->
+            <h4 class="earn-item-title text-yellow">Deposit</h4>
+            <p class="earn-text">
+              Deposit a single token into a liquidity pair vault.            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Create Pair</h4>
+            <p class="earn-text">
+              Half of your deposit will be swapped for the other token in the asset pair.            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Provide Liquidity</h4>
+            <p class="earn-text">
+              The token pair is staked 
+in the liquidity pool on an external DEX.
+
+            </p>
+          </div>
+          <div class="earn-item card-blue">
+            <h4 class="earn-item-title text-yellow">Reinvest</h4>
+            <p class="earn-text">
+              The farming rewards earned from your lp stake are reinvested into your lp position.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scrollFade">
+      <div class="wrap vaults">
+        <img class="popcorn-bg" src="img/popcorn-bg.png" alt="popcorn" />
+        <h3 class="page-title">Featured Vaults (Not real values)</h3>
+        <div class="vaults-list">
+          <div class="vaults-item card-blue">
+            <div class="vaults-item-header">
+              <div class="vaults-item-header-img">
+                <img class="vaults-item-first-img" src="img/ada-1.png" alt="" />
+              
+              </div>
+
+              <h5 class="vaults-item-title">ADA/SUNDAE</h5>
+            </div>
+
+            <div class="vaults-content">
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">APY</h6>
+                <p class="vaults-monet-value">15.11%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">Daily</h6>
+                <p class="vaults-monet-value">0.06%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">TVL</h6>
+                <p class="vaults-monet-value"> $3.65M </p>
+              </div>
+
+              <div class="vaults-monet d-m-none">
+                <h6 class="vaults-monet-name"> Health </h6>
+                <p class="vaults-monet-value health"> 9.6 </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="vaults-item card-blue">
+            <div class="vaults-item-header">
+              <div class="vaults-item-header-img">
+                <img class="vaults-pop-max-img" src="img/popi-max.png" alt="" />
+              </div>
+
+              <h5 class="vaults-item-title">POP Maxi</h5>
+            </div>
+
+            <div class="vaults-content">
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">APY</h6>
+                <p class="vaults-monet-value">23.45%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">Daily</h6>
+                <p class="vaults-monet-value">0.06%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">TVL</h6>
+                <p class="vaults-monet-value"> $1.89M </p>
+              </div>
+
+              <div class="vaults-monet d-m-none">
+                <h6 class="vaults-monet-name"> Health </h6>
+                <p class="vaults-monet-value health"> 9.8 </p>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="vaults-item card-blue">
+            <div class="vaults-item-header">
+              <div class="vaults-item-header-img">
+                <img class="vaults-item-first-img" src="img/ada-1.png" alt="" />
+         
+              </div>
+
+              <h5 class="vaults-item-title">ADA/MIN</h5>
+            </div>
+
+            <div class="vaults-content">
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">APY</h6>
+                <p class="vaults-monet-value">15.11%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">Daily</h6>
+                <p class="vaults-monet-value">0.04%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">TVL</h6>
+                <p class="vaults-monet-value"> $2.45M </p>
+              </div>
+
+              <div class="vaults-monet d-m-none">
+                <h6 class="vaults-monet-name"> Health </h6>
+                <p class="vaults-monet-value health"> 9.3 </p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="vaults-item card-blue">
+            <div class="vaults-item-header">
+              <div class="vaults-item-header-img">
+                <img class="vaults-item-first-img" src="img/ada-1.png" alt="" />
+            
+              </div>
+
+              <h5 class="vaults-item-title">ADA/WRT</h5>
+            </div>
+
+            <div class="vaults-content">
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">APY</h6>
+                <p class="vaults-monet-value">18.63%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">Daily</h6>
+                <p class="vaults-monet-value">0.05%</p>
+              </div>
+
+              <div class="vaults-monet">
+                <h6 class="vaults-monet-name">TVL</h6>
+                <p class="vaults-monet-value"> $1.59M </p>
+              </div>
+
+              <div class="vaults-monet d-m-none">
+                <h6 class="vaults-monet-name"> Health </h6>
+                <p class="vaults-monet-value health"> 9.7 </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- <button class="yellow-btn vaults-btn">Recent News</button> -->
+      </div>
+    </section>
+    <section class="scrollFade">
+      <div class="wrap path">
+        <img class="roast-bg" src="img/roast.png" alt="roast" />
+        <h3 class="page-title">The Poppy Path</h3>
+        <p class="page-subtitle">
+          Our roadmap prioritizes customer safety over rushed execution.
+        </p>
+
+        <div class="path-list">
+          <div class="path-item card-blue">
+            <h5 class="path-title">Smart Contracts</h5>
+            <p class="path-date">May 2023</p>
+          </div>
+
+          <div class="path-item card-blue">
+            <h5 class="path-title">Testnet Launch</h5>
+            <p class="path-date">July 2023</p>
+          </div>
+
+          <div class="path-item card-blue">
+            <h5 class="path-title">Mainnet Launch</h5>
+            <p class="path-date">August 2023</p>
+          </div>
+
+          <div class="path-item card-blue">
+            <h5 class="path-title">Governance</h5>
+            <p class="path-date">September 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="scrollFade">
+      <div class="wrap token">
+        <img class="token-bg" src="img/movie-bg.png" alt="movie-poster" />
+        <h3 class="page-title">$POP Token</h3>
+        <p class="page-subtitle">
+          $POP is the native revenue-share & governance token for our protocol.
+        </p>
+
+        <div class="token-list">
+          <div class="token-item card-blue">
+            <h5 class="token-title text-yellow">POP Maxi</h5>
+            <p class="token-text">
+              POP holders share in our revenue by staking their POP in Poppy
+              Maxi vaults.
+            </p>
+          </div>
+
+          <div class="token-item card-blue">
+            <h5 class="token-title text-yellow">POP Earnings Pools</h5>
+            <p class="token-text">
+              Staking POP in a POP Earnings Pool rewards you with native tokens
+              with the platform’s earnings.
+            </p>
+          </div>
+
+          <div class="token-item card-blue">
+            <h5 class="token-title text-yellow">Vote</h5>
+            <p class="token-text">
+              Our Snapshot governance mechanism gives your POP voting power in
+              Poppy’s DAO.
+            </p>
+          </div>
+
+          <div class="token-item card-blue">
+            <h5 class="token-title text-yellow">Fixed-Supply</h5>
+            <p class="token-text">
+              Our full tokenomics and fixed-supply will be released in the near
+              future.
+            </p>
+          </div>
+        </div>
+
+        <!-- <button class="yellow-btn vaults-btn d-sm-none">Recent News</button> -->
+
+      </div>
+    </section>
+
+    <section class="scrollFade" style = "margin-top:3cm;">
+    <div class="wrap token">
+    <h3 class="page-title">Partners</h3>
+    <p class="page-subtitle">
+     Discover the talented partners who are helping build our product. 
+    </p>
+    <div class="team-list" style="justify-content: center; display: flex; align-items: center;">
+      <div class="token-item card-blue" style = "width: 50%; height: 100%;">
+        <a href="https://anastasialabs.com/">
+        <img style = "width: 100%; height: 100%;" src="img/anastasialogo.png" alt="">
+        </a>
+      </div>
+    </div>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="wrap">
+        <ul class="footer-list">
+          <li> <a href="#"> Team </a> </li>
+          <li> <a href="https://medium.com/@financepoppy"> Medium </a>  </li>
+          <li> <a href="#"> Docs </a> </li>
+          <!-- <li> <a href="#"> Media Kit</a> </li> -->
+        </ul>
+
+        <div class="footer-icons">
+          <a href="https://github.com/orgs/Anastasia-Labs/repositories"><img src="img/github.png" alt="" /></a>
+          <a href="https://discord.gg/KAAsjfQ4HZ"> <img src="img/taddy.png" alt="" /> </a>
+          <a href="https://twitter.com/Poppy_Finance"> <img src="img/twitter.png" alt="" /> </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollfade-0.1.js"></script>
+    <script>
+      $(document).ready(function() {
+          $(document).on("click",".earn-navigation-item",function() {
+              $(".earn-navigation-item").removeClass("nav-active");
+              $(this).addClass("nav-active");
+              var data_id = $(this).data("id");
+              $(".earn-list").removeClass("active-earn-list");
+              $(".earn-list[data-id='"+data_id+"']").addClass("active-earn-list");
+
+          });
+
+      });
+    </script>
+  </body>
+</html>
